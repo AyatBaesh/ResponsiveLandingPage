@@ -1,0 +1,342 @@
+
+/* GLOBAL STYLING */
+
+    *{
+        box-sizing:border-box;
+        scroll-behavior: smooth;
+        margin:0 ;
+        padding:0;
+        
+    }
+    html{
+        font-family: Sans-serif;
+        font-size: 18px;
+        scroll-padding-top: 170px;
+        /* width:100%; */
+    }
+    body{
+        background:linear-gradient(rgb(137,214,251), rgb(2,87,122));
+        color:rgb(212,240,252);
+    }
+    
+    .content-wrapper{
+        max-width:1080px;
+        margin:auto;     
+    }
+
+    /* HEADER STYLING */
+    header{
+        position:fixed;
+        top:0;
+        width:100%;
+        opacity: 80%;
+        display:flex;
+        justify-content:space-around;
+        z-index: 1;
+        /* align-items: center; */
+        background: linear-gradient(rgb(200, 235, 250), rgb(137,214,251) );
+    }
+    header:hover{
+        box-shadow:0 0  125px 0  white;
+        opacity:100%;
+    
+}
+#logo{
+    
+    max-height:170px;
+    display: flex;
+    align-items: center;
+}
+#nav-bar{
+    width:50%;
+    display:flex;
+    justify-content: space-between;
+    
+    /* text-align: center; */
+}
+.nav-link{
+    text-decoration:none;
+    color:white;
+    justify-content: center;
+    display: flex;
+    height:100%;
+    width:100%;
+    align-items: center;
+    border-radius: 5px;
+    
+}
+/* .nav-item{
+    width: 100%;
+    height: 100%;
+    
+} */
+.nav-link:hover{
+    background-color:rgb(137,214,251);
+    box-shadow: 0 0 10px 0 gray;
+}
+.nav-link:active{
+    background-color:rgb(212,240,252);
+    color:black;
+    box-shadow: none;
+}
+/* .nav-link:hover{
+ 
+    color: rgb(2,87,122);
+    transition: color 0.1s;
+}
+.nav-link:active{
+ 
+    color: white;
+} */
+
+    /* HEADER RESPONSIVE STYLING */
+    @media(max-width:850px){
+        
+        .navbar{
+            
+            flex-direction: column;
+
+        }
+        .nav-item{
+            padding: 5px;
+        }
+    }
+    @media(max-width:750px){
+        
+        header{
+            flex-direction: column;
+            text-align: center;
+        }
+        .logo{
+            padding:10px;
+        }
+        .logo img{
+            width: 150px;
+        }
+        
+        .nav-link{
+            
+            padding: 10px;
+        }
+        #nav-bar{
+            /* border: 1px solid black; */
+            flex-direction: column;
+            margin: auto;
+        }
+    }
+
+
+  /* FORM STYLING */
+  #contact-me{
+    margin-top: 180px;
+    text-align:center;
+  
+  }
+  #contact-me h3, #contact-me h2{
+  
+  }
+  label{
+    display:block; 
+    padding:5px;
+    text-align:center;
+  }
+  form{
+    display:block;
+    margin: auto;
+    padding:10px;
+    max-width:550px;
+    /* border: 1px solid 	#7289DA; */
+    /* background-color:	#7289DA; */
+    background: linear-gradient(rgb(212,240,252), rgb(137,214,251) );
+    border-radius:30px;
+    color:black;
+    opacity:85%;
+  }
+  form:hover{
+     box-shadow:0 0  125px 0  white;
+     opacity:100%;
+     z-index: 2;
+  }
+  form:active{
+    opacity:100%;
+  }
+  input,select{
+    width:100%;
+  }
+  #submit-btn{
+    width:50%;
+    cursor:pointer;
+    margin:10px 0;
+    padding:5px;
+    background: rgb(2,169,247);
+    border: none;
+    border-radius:10px;
+    font-size: 18px;;
+  }
+  #submit-btn:hover{
+   
+    background-color: rgb(137,214,251) ;
+    border: none;
+    /* border-radius:2px; */
+    box-shadow:0 0  15px 0  white;
+  }
+  #submit-btn:active{
+    background-color: rgb(0, 135, 180);
+    box-shadow:none;
+    color:white;
+  }
+  @media(max-width:850px){
+    #contact-me{
+        margin-top:400px;
+    }
+  }
+  @media(max-width:750px){
+    html{
+        scroll-padding-top: 450px;
+    }
+  }
+  /* FEATURES STYLING */
+  #features{
+    margin: 70px auto;
+   /* border: 1px solid black; */
+    /* text-align: left; */
+    
+  }
+   .features{
+    margin:100px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    text-align: left;
+   
+  }
+  .features-text{
+    width:80%;
+    
+  }
+  .icon{
+   
+    margin-left:10%;
+    width: 20%;
+  }
+  /*
+
+  i{
+    padding: 10px;
+  } */
+
+
+  /*VIDEO STYLING*/
+#video-section{
+    display: flex;
+    justify-content: center;
+    margin:50px;
+}
+#video{
+    border-radius: 15px;
+    opacity: 70%;
+}
+#video:hover{
+    opacity: 100%;
+}
+
+/*PRICELIST STYLING*/
+#pricelist{
+    
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto;
+
+    
+}
+.product-header{
+    background-color:rgb(137,214,251);
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    padding:10px;
+    margin: 0;
+    width: 100%; 
+    border-radius: 5px 5px 0 0;
+}
+.price{
+    padding: 30px 0 10px 0;
+    font-size: 24px;
+}
+.product{
+    background: linear-gradient(rgb(200, 235, 250), rgb(137,214,251) );
+    text-align: center;
+    color:black;
+    width: 100%;
+    padding: 0;
+    border-radius:  10px ;
+}
+.product:hover{
+    box-shadow:0 0  125px 0  white;
+     opacity:100%;
+     z-index: 2;
+}
+#pricelist li{
+    padding: 15px 0;
+}
+.product-description{   
+    list-style: none;
+}
+.order-button{
+    cursor:pointer;
+    padding: 15px;
+    margin: 10px auto;
+    font-size: 20px;
+    border-radius: 15px;
+    width: 35%;
+    background: rgb(2,169,247);
+    color: white;
+    border: none;
+    border-radius:10px;
+}
+.order-button:hover{
+    background-color: rgb(137,214,251) ;
+    border: none;
+    /* border-radius:2px; */
+    box-shadow:0 0  15px 0  white;
+}
+.order-button:active{
+    background-color: rgb(0, 135, 180);
+    box-shadow:none;
+    color:black;
+}
+@media(max-width:850px){
+    #pricelist{
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+}
+
+/*FOOTER STYLING*/
+footer{
+    padding: 50px;
+    background: linear-gradient(rgb(2,87,122), rgb(1,48,63));
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(212,240,252);
+}
+footer a:hover{
+    color:gray
+}
+footer a:active{
+    color:black;
+}
+footer ul li{
+    padding: 1vw 2vw;
+}
